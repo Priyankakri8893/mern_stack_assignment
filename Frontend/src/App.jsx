@@ -1,7 +1,6 @@
 import { useState } from "react";
 import axios from 'axios'
 
-
 function App(){
     const [form, setForm]= useState({
         username: "",
@@ -42,7 +41,7 @@ function App(){
             // Handle other response formats accordingly
             setGet(JSON.stringify(response.data));
           }
-          console.log(response.data);
+          // console.log(response.data);
         } catch (error) {
           console.error(error);
           setGet("Error occurred while fetching user data.");
