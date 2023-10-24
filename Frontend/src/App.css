@@ -1,42 +1,27 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Style the heading */
+.heading {
+  font-size: 24px; /* Adjust the font size to your preference */
+  text-align: center; /* Center-align the text */
+  margin-bottom: 20px; /* Add some spacing at the bottom */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Style the login and register labels */
+.loginregister {
+  text-align: center; /* Center-align the labels */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.loginregister label {
+  display: inline-block; /* Display labels inline */
+  margin: 0 10px; /* Add some spacing between labels */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  font-size: 18px; /* Adjust the font size to your preference */
+  color: #333; /* Text color */
+  padding: 5px 10px; /* Add some padding to the labels */
+  border: 1px solid #333; /* Add a border */
+  border-radius: 5px; /* Add rounded corners */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.loginregister label:hover {
+  background-color: #333; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
 }
