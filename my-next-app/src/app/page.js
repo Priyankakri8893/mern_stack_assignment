@@ -5,7 +5,7 @@ import { toast, ToastContainer } from "react-toastify";
 import io from "socket.io-client";
 import ClientRoom from "@/app/component/clientRoom";
 import JoinCreateRoom from "@/app/component/joinCreateRoom";
-import Room from "@/app/component/room";
+import Room from "@/app/component/canvas/room";
 import Sidebar from "@/app/component/sidebar";
 import 'react-toastify/dist/ReactToastify.css';
 

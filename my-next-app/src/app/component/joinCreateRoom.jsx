@@ -58,24 +58,23 @@ const JoinCreateRoom = ({ uuid, setUser, setRoomJoined }) => {
               <input
                 type="text"
                 placeholder="Name"
-                className="form-control min-w-[90%]"
+                className="min-w-[90%]"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
             </div>
-            <div className="input-group my-2 items-center mt-10 mx-10">
+            <div className="my-2 items-center mt-10 mx-10">
               <input
                 type="text"
-                className="form-control min-w-[90%]"
+                className="min-w-[90%]"
                 value={roomId}
                 readOnly={true}
                 style={{
                   boxShadow: "none",
                 }}
               />
-              <div className="input-group-append">
+              <div>
                 <button
-                  className="btn btn-outline-primary border-0 btn-sm"
                   type="button"
                   onClick={() => setRoomId(uuid())}
                 >
@@ -89,7 +88,6 @@ const JoinCreateRoom = ({ uuid, setUser, setRoomJoined }) => {
                 })}
                 >
                   <button
-                    className="btn btn-outline-dark border-0 btn-sm"
                     type="button"
                   >
                     Copy
@@ -97,8 +95,8 @@ const JoinCreateRoom = ({ uuid, setUser, setRoomJoined }) => {
                 </CopyToClipboard>
               </div>
             </div>
-            <div className="form-group mt-10 mx-10 text-2xl">
-              <button type="submit" className="form-control btn btn-dark min-w-[90%]">
+            <div className="mt-10 mx-10 text-2xl">
+              <button type="submit" className="min-w-[90%]">
                 Create Room
               </button>
             </div>
@@ -112,7 +110,7 @@ const JoinCreateRoom = ({ uuid, setUser, setRoomJoined }) => {
               <input
                 type="text"
                 placeholder="Name"
-                className="form-control min-w-[90%]"
+                className="min-w-[90%]"
                 value={joinName}
                 onChange={(e) => setJoinName(e.target.value)}
               />
@@ -120,7 +118,7 @@ const JoinCreateRoom = ({ uuid, setUser, setRoomJoined }) => {
             <div className="mt-10 mx-10">
               <input
                 type="text"
-                className="form-control min-w-[90%]"
+                className="min-w-[90%]"
                 value={joinRoomId}
                 onChange={(e) => setJoinRoomId(e.target.value)}
                 placeholder="Room Id"
@@ -129,8 +127,8 @@ const JoinCreateRoom = ({ uuid, setUser, setRoomJoined }) => {
                 }}
               />
             </div>
-            <div className="form-group mt-10 mx-10 text-2xl">
-              <button type="submit" className="form-control btn btn-dark min-w-[90%]">
+            <div className="mt-10 mx-10 text-2xl">
+              <button type="submit" className="min-w-[90%]">
                 Join Room
               </button>
             </div>

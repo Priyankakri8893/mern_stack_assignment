@@ -16,14 +16,14 @@ const Sidebar = ({ users, user, socket }) => {
   return (
     <>
       <button
-        className="btn btn-dark btn-sm"
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded-full"
         onClick={openSideBar}
         style={{ position: "absolute", top: "5%", left: "5%" }}
       >
         Users
       </button>
       <div
-        className="fixed top-0 left-0 h-full bg-dark"
+        className="fixed top-0 left-0 h-full bg-gray-700"
         ref={sideBarRef}
         style={{
           width: "150px",
@@ -33,7 +33,7 @@ const Sidebar = ({ users, user, socket }) => {
         }}
       >
         <button
-          className="btn btn-block border-0 rounded-0 btn-light form-control"
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded-full mt-5"
           onClick={closeSideBar}
         >
           Close
